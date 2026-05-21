@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Student Builder Group</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="#" class="logo">
+      <div class="e-square-logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Top E (horizontal) -->
+          <path d="M4 4H14V6H6V9H12V11H6V14H14V16H4V4Z" fill="var(--purple)" stroke="var(--purple)" stroke-width="0.5"/>
+          <!-- Right E (rotated 90deg) -->
+          <path d="M28 4V14H26V6H23V12H21V6H18V14H16V4H28Z" fill="var(--purple)" stroke="var(--purple)" stroke-width="0.5"/>
+          <!-- Bottom E (horizontal, flipped) -->
+          <path d="M28 28H18V26H26V23H20V21H26V18H18V16H28V28Z" fill="var(--purple)" stroke="var(--purple)" stroke-width="0.5"/>
+          <!-- Left E (rotated 90deg, flipped) -->
+          <path d="M4 28V18H6V26H9V20H11V26H14V18H16V28H4Z" fill="var(--purple)" stroke="var(--purple)" stroke-width="0.5"/>
+          <!-- Inner fill (lighter) -->
+          <rect x="8" y="8" width="16" height="16" fill="rgba(153, 102, 255, 0.15)" rx="1"/>
+        </svg>
+      </div>
+      <span class="logo-text">AWS Student Builder Group</span>
+    </a>
+    
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+    
+    <a href="#join" class="nav-btn">Join Us</a>
+    
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span>
+    </button>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="tag">AWS Student Community</p>
+        <h1>Build with cloud.<br>Grow together.</h1>
+        <p class="hero-sub">Hackathons, bootcamps, and meetups for students who want to learn cloud computing.</p>
+        <div class="hero-btns">
+          <a href="#join" class="btn primary">Get started</a>
+          <a href="#events" class="btn secondary">View events</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="cube-grid">
+          <div class="cube c1"></div>
+          <div class="cube c2"></div>
+          <div class="cube c3"></div>
+          <div class="cube c4"></div>
+          <div class="cube c5"></div>
+          <div class="cube c6"></div>
+          <div class="cube c7"></div>
+          <div class="cube c8"></div>
+          <div class="cube c9"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <span class="stat-num">200+</span>
+        <span class="stat-label">Members</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">15</span>
+        <span class="stat-label">Events</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">5</span>
+        <span class="stat-label">Hackathons</span>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-header">
+        <h2>What we do</h2>
+        <p>Students learning cloud computing together. No gatekeeping, just building.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">H</div>
+          <h3>Hackathons</h3>
+          <p>48-hour build sprints with real problems and real prizes.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">B</div>
+          <h3>Bootcamps</h3>
+          <p>Hands-on AWS training to help you get certified.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">M</div>
+          <h3>Meetups</h3>
+          <p>Casual hangouts to share projects and ideas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="domains">
+      <h2>Areas we explore</h2>
+      <div class="domain-pills">
+        <span class="pill">Cloud Architecture</span>
+        <span class="pill">DevOps</span>
+        <span class="pill">AI / ML</span>
+        <span class="pill">Security</span>
+        <span class="pill">Web Dev</span>
+      </div>
+    </section>
+
+    <section class="events" id="events">
+      <h2>Upcoming</h2>
+      <div class="events-list">
+        <article class="event">
+          <div class="event-date">
+            <span class="day">24</span>
+            <span class="month">Jan</span>
+          </div>
+          <div class="event-info">
+            <h3>Cloud 101 Bootcamp</h3>
+            <p>Intro to AWS. No experience needed.</p>
+          </div>
+          <span class="event-status open">Open</span>
+        </article>
+        <article class="event">
+          <div class="event-date">
+            <span class="day">08</span>
+            <span class="month">Feb</span>
+          </div>
+          <div class="event-info">
+            <h3>Winter Hackathon</h3>
+            <p>Build something in 48 hours.</p>
+          </div>
+          <span class="event-status soon">Soon</span>
+        </article>
+        <article class="event">
+          <div class="event-date">
+            <span class="day">22</span>
+            <span class="month">Feb</span>
+          </div>
+          <div class="event-info">
+            <h3>Community Meetup</h3>
+            <p>Show and tell. Pizza included.</p>
+          </div>
+          <span class="event-status">Coming</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="why-join" id="why">
+      <h2>Why join us?</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">01</div>
+          <h3>Learn by doing</h3>
+          <p>Hands-on workshops and projects, not boring lectures. Build real things with AWS.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02</div>
+          <h3>Get certified</h3>
+          <p>Free prep sessions and study groups for AWS certifications. We help each other pass.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03</div>
+          <h3>Network</h3>
+          <p>Connect with AWS professionals, mentors, and students who share your interests.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">04</div>
+          <h3>Win stuff</h3>
+          <p>Hackathons with real prizes, swag, and opportunities. Plus free AWS credits.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline" id="timeline">
+      <h2>Event Timeline</h2>
+      <div class="timeline-track">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2025</span>
+            <h3>Cloud 101 Bootcamp</h3>
+            <p>Intro to AWS fundamentals and services.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Feb 2025</span>
+            <h3>Winter Hackathon</h3>
+            <p>48-hour build sprint with prizes.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Mar 2025</span>
+            <h3>AWS Certification Week</h3>
+            <p>Study sessions and mock tests.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Apr 2025</span>
+            <h3>Cloud Careers Fair</h3>
+            <p>Meet AWS partners and recruiters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h2>Moments</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item g1"><span>Hackathon 2024</span></div>
+        <div class="gallery-item g2"><span>Bootcamp</span></div>
+        <div class="gallery-item g3"><span>Meetup</span></div>
+        <div class="gallery-item g4"><span>Team</span></div>
+      </div>
+    </section>
+
+    <section class="join" id="join">
+      <div class="join-content">
+        <h2>Ready to join?</h2>
+        <p>Be part of a community building cool things with cloud.</p>
+        <a href="#" class="btn primary lg">Join the club</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="e-square-logo sm">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4H14V6H6V9H12V11H6V14H14V16H4V4Z" fill="var(--purple)" stroke="var(--purple)" stroke-width="0.5"/>
+            <path d="M28 4V14H26V6H23V12H21V6H18V14H16V4H28Z" fill="var(--purple)" stroke="var(--purple)" stroke-width="0.5"/>
+            <path d="M28 28H18V26H26V23H20V21H26V18H18V16H28V28Z" fill="var(--purple)" stroke="var(--purple)" stroke-width="0.5"/>
+            <path d="M4 28V18H6V26H9V20H11V26H14V18H16V28H4Z" fill="var(--purple)" stroke="var(--purple)" stroke-width="0.5"/>
+            <rect x="8" y="8" width="16" height="16" fill="rgba(153, 102, 255, 0.15)" rx="1"/>
+          </svg>
+        </div>
+        <span>AWS Student Builder Group</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Discord</a>
+      </div>
+    </div>
+    <p class="footer-copy">2025 AWS Student Builder Group</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
